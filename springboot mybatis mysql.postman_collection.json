@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "f9f26ea7-bd9d-48ca-8b5b-2881e03d0461",
+		"name": "springboot mybatis mysql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/girls",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"girls"
+					]
+				},
+				"description": "http://localhost:8080/girls"
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/girls",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"girls"
+					]
+				},
+				"description": "http://localhost:8080/girls"
+			},
+			"response": []
+		},
+		{
+			"name": "updateById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 9,\r\n    \"name\": \"qiTIanDaSheng\",\r\n    \"age\": 13\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/updateById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateById"
+					]
+				},
+				"description": "http://localhost:8080/girls"
+			},
+			"response": []
+		},
+		{
+			"name": "addOne",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/addOne?name=xiaoli&age=12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addOne"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "xiaoli"
+						},
+						{
+							"key": "age",
+							"value": "12"
+						}
+					]
+				},
+				"description": "http://localhost:8080/girls"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteOne",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/deleteOne",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteOne"
+					]
+				},
+				"description": "http://localhost:8080/girls"
+			},
+			"response": []
+		},
+		{
+			"name": "addBatch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"A\",\r\n        \"age\": 13\r\n    },\r\n    {\r\n        \"name\": \"B\",\r\n        \"age\": 14\r\n    },\r\n    {\r\n        \"name\": \"C\",\r\n        \"age\": 15\r\n    },\r\n    {\r\n        \"name\": \"D\",\r\n        \"age\": 16\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addBatch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addBatch"
+					]
+				},
+				"description": "http://localhost:8080/girls"
+			},
+			"response": []
+		},
+		{
+			"name": "addBatch2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"value": "[\n    {\n        \"name\": \"A\",\n        \"age\": 13\n    },\n    {\n        \"name\": \"B\",\n        \"age\": 14\n    },\n    {\n        \"name\": \"C\",\n        \"age\": 15\n    },\n    {\n        \"name\": \"D\",\n        \"age\": 16\n    }\n]",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addBatch2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addBatch2"
+					]
+				},
+				"description": "http://localhost:8080/girls"
+			},
+			"response": []
+		}
+	]
+}
