@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  context-path: /springboot
+
+girl:
+  name: xiaomin
+  age: 18
+  content: content:${name},age:${age}
+
+spring:
+  profiles:
+    active: dev
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/girl?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+#mybatis配置
+mybatis:
+  #mapper文件
+  mapper-locations: mapper/*Mapper.xml
+  #实体
+  type-aliases-package: com.example.*.pojo
+
+
+

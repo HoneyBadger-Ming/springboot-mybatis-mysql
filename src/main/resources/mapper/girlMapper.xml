@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.firstSpringboot.dao.GirlDao">
+    <select id="findAll" resultType="com.example.firstSpringboot.pojo.Girl">
+        select * from girl
+    </select>
+
+    <select id="getGirlById" parameterType="int" resultType="com.example.firstSpringboot.pojo.Girl">
+        select * from girl where id = #{id}
+    </select>
+
+    <insert id="save" parameterType="com.example.firstSpringboot.pojo.Girl">
+        insert into girl(name, age) values(#{name}, #{age})
+    </insert>
+
+    <insert id="addBatchGirl">
+        insert into girl(name, age) values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.name}, #{item.age})
+        </foreach>
+    </insert>
+
+    <delete id="deleteOneGirl" parameterType="com.example.firstSpringboot.pojo.Girl">
+        delete from girl where id=#{id}
+    </delete>
+
+    <update id="updateById" parameterType="com.example.firstSpringboot.pojo.Girl">
+        update girl set name = #{name} where id = #{id}
+    </update>
+</mapper>
