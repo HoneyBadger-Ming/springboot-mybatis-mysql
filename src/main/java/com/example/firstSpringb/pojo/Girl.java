@@ -1,4 +1,4 @@
-package com.example.firstSpringboot.pojo;
+package com.example.firstSpringb.pojo;
 
 public class Girl {
 

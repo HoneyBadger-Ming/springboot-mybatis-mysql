@@ -1,8 +1,8 @@
-package com.example.firstSpringboot.controller;
+package com.example.firstSpringb.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.example.firstSpringboot.dao.GirlDao;
-import com.example.firstSpringboot.pojo.Girl;
+import com.example.firstSpringb.dao.GirlDao;
+import com.example.firstSpringb.pojo.Girl;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;

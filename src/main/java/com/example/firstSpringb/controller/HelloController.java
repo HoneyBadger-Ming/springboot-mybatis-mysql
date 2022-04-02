@@ -1,6 +1,6 @@
-package com.example.firstSpringboot.controller;
+package com.example.firstSpringb.controller;
 
-import com.example.firstSpringboot.pojo.GirlProperties;
+import com.example.firstSpringb.pojo.GirlProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;

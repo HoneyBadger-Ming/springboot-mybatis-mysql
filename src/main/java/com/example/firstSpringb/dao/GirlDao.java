@@ -1,6 +1,6 @@
-package com.example.firstSpringboot.dao;
+package com.example.firstSpringb.dao;
 
-import com.example.firstSpringboot.pojo.Girl;
+import com.example.firstSpringb.pojo.Girl;
 
 import java.util.List;
 
