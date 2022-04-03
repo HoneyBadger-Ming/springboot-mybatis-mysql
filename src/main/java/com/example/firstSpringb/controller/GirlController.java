@@ -22,6 +22,14 @@ public class GirlController {
      * 查询所有女生列表
      * @return
      */
+    @RequestMapping(value = "/girlsException", method = RequestMethod.GET)
+    public List<Girl> getGirlListException() {
+        if (true){
+            throw new IllegalArgumentException("test");
+        }
+        return girlDao.findAll();
+    }
+
     @RequestMapping(value = "/girls", method = RequestMethod.GET)
     public List<Girl> getGirlList() {
         return girlDao.findAll();
